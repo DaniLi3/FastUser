@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activitys.ModuloMisSolicitudes.EnviarSolicitud.ConfirmarSolicitud">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/CirculeImagebackk"
+            android:layout_width="50dp"
+
+            android:layout_height="50dp"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            android:layout_gravity="left|top"
+            app:civ_border_color="#f0f0f0"
+            app:civ_border_width="3dp"
+            />
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#0B300C"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:text="Confirmar solicitud"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+
+            android:orientation="horizontal"
+            >
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Origen:"
+                android:layout_weight="1"
+                android:textColor="#0B300C"
+                android:textStyle="bold"
+                android:textSize="15dp"
+
+                />
+            <TextView
+android:id="@+id/txtorigen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Acapulco"
+                android:layout_weight="1"
+                android:maxLines="1"
+                android:gravity="right"
+                android:textSize="15dp"
+                android:textColor="#0B300C"
+
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Destino:"
+                android:layout_weight="1"
+                android:textColor="#0B300C"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                />
+            <TextView
+                android:id="@+id/txtdestino"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ciudad de méxico"
+                android:layout_weight="1"
+                android:maxLines="1"
+                android:gravity="right"
+                android:textSize="15dp"
+                android:textColor="#0B300C"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Salida:"
+                android:layout_weight="1"
+                android:textColor="#0B300C"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                />
+            <TextView
+                android:id="@+id/txtfechasalida"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ciudad de méxico"
+                android:layout_weight="1"
+                android:maxLines="2"
+                android:gravity="right"
+                android:textSize="15dp"
+                android:textColor="#0B300C"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hora de salida:"
+                android:layout_weight="1"
+                android:textColor="#0B300C"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                />
+            <TextView
+                android:id="@+id/txthorasalida"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ciudad de méxico"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:maxLines="1"
+                android:gravity="right"
+                android:textSize="15dp"
+                android:textColor="#0B300C"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Paquete"
+
+                android:layout_weight="1"
+                android:textColor="#0B300C"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Peso:"
+                android:layout_weight="1"
+                android:textColor="#0B300C"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                />
+            <TextView
+                android:id="@+id/txtpeso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ciudad de méxico"
+                android:layout_weight="1"
+                android:maxLines="1"
+                android:gravity="right"
+                android:textSize="15dp"
+                android:textColor="#0B300C"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dimensiones:"
+
+                android:textColor="#0B300C"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                />
+            <TextView
+                android:id="@+id/txtdimen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="12 x12 x12 x12 x12 x12 x12 33 3"
+                android:layout_weight="1"
+                android:maxLines="1"
+                android:gravity="right"
+                android:textSize="15dp"
+                android:textColor="#0B300C"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:paddingRight="10dp"
+
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Precio de envío:"
+                android:layout_weight="1"
+                android:textColor="#0B300C"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                />
+            <TextView
+                android:id="@+id/txtprecio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="$300 MXN"
+                android:layout_weight="1"
+                android:maxLines="1"
+                android:gravity="right"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="#21B827"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Descripción del articulo:"
+                android:layout_weight="1"
+                android:layout_marginTop="20dp"
+                android:textColor="#0B300C"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/txtdescripp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Este es un libro y paletas de colores"
+                android:layout_weight="1"
+                android:textColor="#0B300C"
+
+                android:textSize="15dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtpersona"
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content"
+                android:hint="Nombre de quien recibirá el paquete">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    android:layout_height="wrap_content"
+
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtpersonatel"
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content"
+                android:hint="Tel. de la persona que recibirá">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    android:layout_height="wrap_content"
+                    android:maxLength="11"
+                    android:inputType="phone"
+
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtnotas"
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+
+                android:layout_height="wrap_content"
+                android:hint="Notas adicionales">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+
+                    android:layout_height="wrap_content"
+
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:background="#1600BCD4"
+            >
+
+
+            <ImageView
+                android:id="@+id/imagepaquete"
+                android:layout_width="230dp"
+                android:visibility="gone"
+
+                android:layout_height="180dp"
+                android:src="@drawable/subir" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:gravity="center"
+            android:background="#1600BCD4"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="20dp"
+                android:orientation="vertical"
+                >
+
+                <ImageView
+                    android:id="@+id/subirima"
+                    android:layout_width="50dp"
+
+                    android:layout_height="50dp"
+                    android:src="@drawable/subir"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Subir imagen"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/btndialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_bottom_redonder"
+            android:text="Continuar"/>
+
+    </LinearLayout>
+    </ScrollView>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

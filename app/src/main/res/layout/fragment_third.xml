@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Activitys.fragmentos.ThirdFragment">   <!-- TODO: Update blank fragment layout -->
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+        >
+
+        <com.github.florent37.shapeofview.shapes.DiagonalView
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:elevation="4dp"
+            app:shape_diagonal_angle="10"
+            app:shape_diagonal_direction="left"
+            app:shape_diagonal_position="bottom">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/purple_700"/>
+
+
+            <!-- YOUR CONTENT -->
+
+
+
+
+        </com.github.florent37.shapeofview.shapes.DiagonalView>
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Miguel Angel Ruiz Nava"
+            android:textAlignment="center"
+            android:visibility="invisible"
+            android:textSize="20dp"
+            android:textStyle="bold"
+             android:textColor="#003D66"
+            android:layout_marginTop="25dp"/>
+        <TextView
+            android:id="@+id/tipousuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Estándar"
+
+             android:textColor="#003D66"
+            android:textAlignment="center"
+            android:textSize="18dp"
+
+       />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/txtrealizados"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="20"
+                     android:textColor="#003D66"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                 />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="viajes realizados"
+                     android:textColor="#003D66"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:textSize="13dp"
+
+
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/txtsolicitados"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="10"
+                     android:textColor="#003D66"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="solicitados"
+                    android:layout_gravity="center"
+                     android:textColor="#003D66"
+                    android:textAlignment="center"
+                    android:textSize="13dp"
+
+
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/txtcalificacion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="4.6"
+                     android:textColor="#003D66"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="calificacion"
+                    android:textAlignment="center"
+                     android:textColor="#003D66"
+                    android:textSize="13dp"
+
+
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+        android:layout_marginBottom="20dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp"
+        android:padding="10dp"
+
+
+        android:orientation="vertical"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardinfopersonal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="5dp"
+            android:padding="5dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_userpro"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Información personal"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                         android:textColor="#003D66"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/navigate_next_24"
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardinfocuenta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="5dp"
+            android:padding="5dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_cuenta"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Información de la cuenta"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                         android:textColor="#003D66"
+
+                        android:textStyle="bold"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/navigate_next_24"
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardviajecompar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="5dp"
+            android:padding="5dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_share_24"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Viajes Compartidos"
+                        android:textAlignment="center"
+                        android:textColor="#003D66"
+                        android:textSize="20dp"
+
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/navigate_next_24"
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardmissolicitudes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="5dp"
+            android:padding="5dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_calendar"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Mis Solicitudes"
+                        android:textAlignment="center"
+                        android:textColor="#003D66"
+                        android:textSize="20dp"
+
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/navigate_next_24"
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+    </ScrollView>
+
+
+
+    </LinearLayout>
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageViewPro"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/user1"
+        android:paddingBottom="20dp"
+        android:layout_gravity="center|top"
+        app:civ_border_color="#f0f0f0"
+        app:civ_border_width="5dp"
+        android:layout_marginTop="120dp"/>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/fotoProfile"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/cambiar"
+        android:paddingBottom="20dp"
+        android:layout_gravity="center|top"
+        app:civ_border_color="#f0f0f0"
+        android:layout_marginLeft="70dp"
+        app:civ_border_width="5dp"
+
+        android:layout_marginTop="200dp">
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+
+
+
+
+</FrameLayout>

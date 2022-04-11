@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent"
+    tools:context=".Activitys.Cardsearch">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/purple_700"
+            app:cardCornerRadius="10dp"
+            >
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/Cir"
+                android:layout_width="40dp"
+                android:layout_margin="10dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_bak"
+                android:layout_gravity="left|top"
+                app:civ_border_color="#f0f0f0"
+                app:civ_border_width="3dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Viajes cerca de ti"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </androidx.cardview.widget.CardView>
+        <LinearLayout
+            android:id="@+id/verr"
+            android:layout_width="match_parent"
+            android:layout_marginTop="40dp"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center|top"
+                android:src="@drawable/nofound"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/nofun"
+                android:layout_marginRight="20dp"
+                android:text="No encontramos viajes que coincidan con tu búsqueda"
+                android:textSize="25dp"
+                android:textColor="#083511"
+                android:textAlignment="center"
+
+                android:layout_marginLeft="20dp"
+
+                android:textStyle="bold"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Crear alerta"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center"
+                android:background="@drawable/btn_bottom_redonder"/>
+
+
+
+        </LinearLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/reci"/>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

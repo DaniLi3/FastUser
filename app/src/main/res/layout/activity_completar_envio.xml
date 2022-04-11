@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".Activitys.ModuloMisSolicitudes.EnviarSolicitud.CompletarEnvio">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/CirculeImagebackk"
+            android:layout_width="50dp"
+
+            android:layout_height="50dp"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            android:layout_gravity="left|top"
+            app:civ_border_color="#f0f0f0"
+            app:civ_border_width="3dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#0B300C"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginTop="15dp"
+            android:text="Completar envío"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#0B300C"
+            android:layout_marginTop="5dp"
+            android:textSize="16dp"
+            android:text="Por favor describe el contenido, las medidas y el valor estimado de tu paquete (si es un documento ingresa 0 en cada medida)."/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtarti"
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+            android:hint="Artículos que envías Eje. libros, celular, etc.">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:layout_height="wrap_content"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txtpeso"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="15dp"
+
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Peso en kg">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:background="@color/white"
+                        android:digits="1234567890"
+                        android:inputType="phone"
+                        android:maxLength="3"
+                        android:layout_height="wrap_content"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txtlargo"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Largo en cm">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:background="@color/white"
+                        android:digits="1234567890"
+                        android:maxLength="3"
+                        android:inputType="phone"
+                        android:layout_height="wrap_content"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txtancho"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Ancho en cm">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:background="@color/white"
+                        android:layout_height="wrap_content"
+                        android:digits="1234567890"
+                        android:inputType="phone"
+                        android:maxLength="3"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txtalto"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Alto en cm">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:background="@color/white"
+                        android:layout_height="wrap_content"
+                        android:digits="1234567890"
+                        android:maxLength="3"
+                        android:inputType="phone"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtvalor"
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+            android:hint="Valor estimado de tu paquete $$">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:layout_height="wrap_content"
+                android:digits="1234567890"
+                android:inputType="phone"
+                android:maxLength="4"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/txttari"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#0B300C"
+                android:layout_marginTop="30dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:text="Tarifa"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#0B300C"
+                android:layout_marginTop="5dp"
+                android:textSize="16dp"
+                android:text="El precio del envío se calcúla en base a los parámetros ingresados como el peso y medida."/>
+            <Button
+                android:id="@+id/btnconti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_bottom_redonder"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:text="Siguiente"/>
+
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

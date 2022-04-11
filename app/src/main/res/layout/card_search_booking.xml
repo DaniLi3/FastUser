@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/cardhistory"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:backgroundTint="#46DDF5F8"
+
+    android:padding="5dp"
+    android:animateLayoutChanges="true"
+
+    app:cardElevation="1dp"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="1dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="#12E8F0F1"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:orientation="horizontal"
+                >
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_calendar"/>
+                <TextView
+                    android:id="@+id/cardhora"
+                    android:layout_marginLeft="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#504F4F"
+                    android:layout_marginTop="5dp"
+                    android:text="Sale el 10 de mayo"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/linea"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/txtorigen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Acapulco"
+                    android:textStyle="bold"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:orientation="horizontal"
+                    >
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/caminar"
+                        />
+
+                    <TextView
+                        android:id="@+id/txtllegada"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:maxLines="1"
+                        android:text="A 2.2 km de tu ubicación"
+                        android:textColor="#24D135"
+                        android:textSize="10dp" />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/txtdestino"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cruz grande"
+                    android:layout_marginTop="15dp"
+                    android:textStyle="bold"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:orientation="horizontal"
+                    >
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/camina"
+                        />
+
+                    <TextView
+                        android:id="@+id/tx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+
+                        android:text="A 10 km del punto de salida"
+                        android:textColor="#FFA929"
+                        android:textSize="10dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+              android:layout_gravity="center"
+                android:orientation="vertical"
+                >
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/navigate_next_24"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imageViewPro"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/user1"
+                    app:civ_border_color="#f0f0f0"
+                    app:civ_border_width="2dp"
+                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:id="@+id/txtname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-3dp"
+                        android:textSize="15sp"
+                        android:text="Miguel Angel Ruiz"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/ic_rate"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:textSize="12sp"
+                            android:text="4.5"/>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Peso disponible" />
+                <TextView
+                    android:id="@+id/precio"
+                    android:layout_marginTop="-3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="MXN $80"/>
+                <TextView
+                    android:id="@+id/kilos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-3dp"
+                    android:textSize="12sp"
+                    android:text="50kg disponibles"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</androidx.cardview.widget.CardView>

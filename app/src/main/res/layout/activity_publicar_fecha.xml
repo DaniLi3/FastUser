@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/purple_700"
+    tools:context=".Activitys.ModuloMisPublicaciones.PublicarViajeActivity.PublicarFecha">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="29dp"
+            android:textStyle="bold"
+
+            android:textAlignment="center"
+            android:layout_marginLeft="20dp"
+            android:text="¿Cuándo es tu salida?"/>
+        <LinearLayout
+            android:layout_width="350dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bg_calendar"
+            android:orientation="vertical"
+            >
+
+            <CalendarView
+                android:id="@+id/datepic"
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/selecfechaa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/btn_bottom_redonder"
+                android:layout_marginBottom="5dp"
+                android:text="Siguiente"/>
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/Cir"
+        android:layout_width="50dp"
+        android:layout_margin="10dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_cancel_24"
+        android:layout_gravity="left|top"
+        app:civ_border_color="#f0f0f0"
+        app:civ_border_width="3dp"
+        />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

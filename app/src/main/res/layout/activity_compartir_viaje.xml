@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".Activitys.ModuloMisSolicitudes.DetallesDeMisSolicitudes.CompartirViaje">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        >
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+        android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Ingresa el nombre del usuario que recibirá el paquete"
+
+             android:textColor="#003D66"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_margin="10dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="El usuario debe estar registrado"
+
+             android:textColor="#003D66"
+            android:textSize="14dp"
+             />
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/seachrt"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_margin="10dp"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycleruser"
+            android:visibility="gone"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"/>
+        <LinearLayout
+            android:id="@+id/verbuscar"
+            android:layout_width="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:orientation="vertical"
+            >
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="23dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="¡Uy! No hemos encontrado resultados "
+                android:textAlignment="center"
+
+                 android:textColor="#003D66"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_margin="10dp"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Comparte la APP con la persona que deseas que visualize la ubicación en tiempo real"
+
+                 android:textColor="#003D66"
+                android:textSize="14dp"
+                />
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:src="@drawable/share"/>
+
+            <Button
+                android:id="@+id/btnmodificarviaje"
+                android:layout_width="match_parent"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_margin="15dp"
+                android:layout_height="wrap_content"
+                android:text="Compartir"
+                android:layout_gravity="bottom|center"
+                android:background="@drawable/btn_bottom_redonder"
+                />
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+    </ScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

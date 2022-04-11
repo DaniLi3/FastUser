@@ -1,0 +1,804 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#F3F1F1"
+    tools:context=".Activitys.ModuloMisSolicitudes.DetallesDeMisSolicitudes.DetallesMijsViajesAceptado">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="15dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="7dp"
+                android:layout_marginLeft="7dp"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Estado: "
+                    android:textStyle="bold"
+                     android:textColor="#003D66"
+                    android:fontFamily="sans-serif-condensed"
+
+                    android:textSize="18dp"
+                    />
+                <TextView
+                    android:id="@+id/txtestado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PAGADO"
+                    android:textColor="#13CF18"
+                    android:fontFamily="sans-serif-condensed"
+
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="7dp"
+                android:layout_marginLeft="7dp"
+                android:orientation="horizontal"
+                >
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fecha de salida: "
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-condensed"
+
+                     android:textColor="#003D66"
+                    android:textSize="18dp"
+                    />
+                <TextView
+                    android:id="@+id/txtdetallesfecha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="25 de diciembre"
+                    android:fontFamily="sans-serif-condensed"
+
+
+                     android:textColor="#003D66"
+                    android:textSize="15dp"
+                    />
+            </LinearLayout>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="10dp"
+
+                        android:layout_marginTop="10dp"
+                        android:animateLayoutChanges="true"
+                        app:cardElevation="1dp"
+                        android:background="@color/white">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+
+                            android:orientation="horizontal">
+
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="80dp"
+                                android:src="@drawable/linio"
+                                />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/deorigen"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center|left"
+                                android:layout_marginLeft="5dp"
+
+                                android:orientation="vertical"
+                                >
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:maxLines="1"
+                                    android:text="Origen:"
+                                    android:fontFamily="sans-serif-condensed"
+                                    android:textSize="12dp"
+
+
+                                    android:textStyle="bold" />
+                                <TextView
+                                    android:id="@+id/txtdetallesorigen"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textStyle="bold"
+                                    android:maxLines="1"
+                                    android:text="Acapulco Gro."
+                                    android:fontFamily="sans-serif-condensed"
+                                     android:textColor="#003D66"
+                                    android:textSize="18dp" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/dedestino"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:layout_marginLeft="5dp"
+
+
+                                android:orientation="vertical"
+                                >
+                                <TextView
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:maxLines="1"
+                                    android:text="Destino:"
+                                    android:fontFamily="sans-serif-condensed"
+                                    android:textStyle="bold"
+
+                                    android:textSize="12dp" />
+                                <TextView
+                                    android:id="@+id/txtdetallesdestino"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:maxLines="1"
+                                    android:text="Acapulco Gro."
+                                    android:fontFamily="sans-serif-condensed"
+
+                                     android:textColor="#003D66"
+                                    android:textSize="18dp"
+                                    android:textStyle="bold"/>
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="right"
+
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                >
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_weight="1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                >
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                android:layout_marginTop="10dp"
+                android:animateLayoutChanges="true"
+                app:cardElevation="1dp"
+                android:background="@color/white">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="Informacion de tu envío"
+                        android:textStyle="bold"
+                         android:textColor="#003D66"
+                        android:textSize="18dp"
+
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+
+                        android:orientation="horizontal"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Dimensiones:"
+                            android:layout_weight="1"
+                             android:textColor="#003D66"
+
+                            android:fontFamily="sans-serif-condensed"
+                            android:textSize="15dp"
+
+                            />
+                        <TextView
+                            android:id="@+id/txtdimensaiones"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="10 x 4 x 2 x 48:"
+                            android:fontFamily="sans-serif-condensed"
+                            android:layout_weight="1"
+                            android:maxLines="1"
+                            android:gravity="right"
+                            android:textSize="15dp"
+                            android:textColor="#808080"
+                            android:textStyle="bold"
+
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:orientation="horizontal"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Recibe:"
+                            android:fontFamily="sans-serif-condensed"
+                            android:layout_weight="1"
+                             android:textColor="#003D66"
+
+                            android:textSize="15dp"
+
+                            />
+                        <TextView
+                            android:id="@+id/txtpersonarecibe"
+                            android:fontFamily="sans-serif-condensed"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Josefina barajas damian"
+                            android:layout_weight="1"
+                            android:maxLines="1"
+                            android:gravity="right"
+                            android:textSize="15dp"
+                            android:textColor="#808080"
+                            android:textStyle="bold"
+
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:orientation="horizontal"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Peso:"
+                            android:layout_weight="1"
+                            android:fontFamily="sans-serif-condensed"
+
+
+                             android:textColor="#003D66"
+
+                            android:textSize="15dp"
+
+                            />
+                        <TextView
+                            android:id="@+id/txtkilos"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="40kg"
+                            android:fontFamily="sans-serif-condensed"
+                            android:layout_weight="1"
+                            android:gravity="right"
+
+                            android:textSize="15dp"
+                            android:textColor="#808080"
+                            android:textStyle="bold"
+
+                            />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Contenido:"
+                            android:layout_weight="1"
+                             android:textColor="#003D66"
+
+                            android:fontFamily="sans-serif-condensed"
+                            android:textSize="15dp"
+
+                            />
+                        <TextView
+                            android:id="@+id/txtcontenido"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Por favor de entregar en la zona dorada del palacio de hierro"
+                            android:layout_weight="1"
+                            android:textAlignment="textEnd"
+                            android:textColor="#808080"
+                            android:textStyle="bold"
+                            android:fontFamily="sans-serif-condensed"
+
+                            android:textSize="15dp"
+
+                            />
+                    </LinearLayout> <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Notas:"
+                        android:layout_weight="1"
+                         android:textColor="#003D66"
+
+
+                        android:fontFamily="sans-serif-condensed"
+
+                        android:textSize="15dp"
+
+                        />
+                    <TextView
+                        android:id="@+id/txtcomenario"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Por favor de entregar en la zona dorada del palacio de hierro"
+                        android:layout_weight="1"
+                        android:textColor="#808080"
+                        android:textStyle="bold"
+                        android:textAlignment="textEnd"
+                        android:fontFamily="sans-serif-condensed"
+
+                        android:textSize="15dp"
+
+                        />
+                </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Precio"
+                            android:layout_weight="1"
+                            android:fontFamily="sans-serif-condensed"
+                             android:textColor="#003D66"
+
+                            android:textSize="15dp"
+
+                            />
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="$400 MXN"
+                            android:textStyle="bold"
+                            android:id="@+id/txtprecioo"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:fontFamily="sans-serif-condensed"
+
+                            android:textColor="#29AE2D"
+
+                            android:textSize="15dp"
+
+                            />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                android:layout_marginTop="10dp"
+                android:animateLayoutChanges="true"
+                app:cardElevation="1dp"
+                android:background="@color/white">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:padding="5dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Imagen"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                         android:textColor="#003D66"
+                        android:textSize="20dp"
+
+                        />
+                    <ImageView
+                        android:id="@+id/imagenpaquete"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/ic_launcher_background" />
+
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/mostrarcontactar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                android:layout_marginTop="10dp"
+                android:visibility="visible"
+                android:animateLayoutChanges="true"
+                app:cardElevation="1dp"
+                android:background="@color/white">
+                <LinearLayout
+                    android:id="@+id/mostrarcontactardos"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:padding="5dp"
+                    android:visibility="visible"
+
+                    android:gravity="center"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/llamar"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/call"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed"
+                            android:text="Llamar"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtrastrear"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/lupa"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed"
+                            android:text="Rastrear"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/txtcompartir"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/share"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed"
+                            android:text="Compartir viaje"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/solicancelar"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:src="@drawable/cancelar"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed"
+                            android:text="Cancelar"/>
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/veruser"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                android:layout_marginTop="10dp"
+                android:visibility="visible"
+                android:animateLayoutChanges="true"
+                app:cardElevation="1dp"
+                android:background="@color/white">
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    >
+                    <LinearLayout
+
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        >
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left|center"
+                            android:orientation="horizontal"
+                            >
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/imageuser"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:src="@drawable/user1"
+                                app:civ_border_color="#f0f0f0"
+                                app:civ_border_width="1dp"
+                                />
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                >
+
+                                <TextView
+                                    android:id="@+id/txtnombre"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#003D66"
+                                    android:textStyle="bold"
+                                    android:fontFamily="sans-serif-condensed"
+                                    android:maxLines="1"
+                                    android:layout_marginLeft="5dp"
+                                    android:textSize="18dp"
+                                    android:text="Job daniel guzman barajas"/>
+                                <TextView
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#808080"
+                                    android:textStyle="bold"
+                                    android:fontFamily="sans-serif-condensed"
+                                    android:maxLines="1"
+                                    android:layout_marginLeft="5dp"
+                                    android:textSize="12dp"
+                                    android:text="conductor"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="right"
+                            android:layout_weight="1"
+                            >
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:src="@drawable/navigate_next_24"
+                                />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                >
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/purple_700"
+        android:orientation="vertical"
+        >
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/purple_700"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Viaje aceptado"
+            android:textAlignment="center"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:textSize="25dp"
+            />
+    </LinearLayout>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/CirculeImageback"
+        android:layout_width="40dp"
+        android:layout_margin="10dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_bak"
+        android:layout_gravity="left|top"
+        app:civ_border_color="#f0f0f0"
+        app:civ_border_width="3dp"
+        >
+
+    </de.hdodenhof.circleimageview.CircleImageView>
+    <LinearLayout
+        android:id="@+id/solicitarpagolayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_gravity="bottom"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#E2F1F1F1"
+            android:padding="20dp"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/aviso"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Para poder ponerte en contacto con el viajero por favor es necesario que realizes el pago."
+                android:layout_weight="1"
+                 android:textColor="#003D66"
+
+                android:textSize="15dp"
+
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                >
+                <Button
+                    android:id="@+id/solipagar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pagar envío"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#2196F3"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

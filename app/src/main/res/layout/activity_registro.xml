@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".Activitys.Registro.RegistroActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="15dp"
+                android:textAlignment="center"
+                android:text="Registro"
+                android:textSize="35dp"
+                android:textColor="#0B300C"
+
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="40dp"
+                android:layout_height="50dp"
+                />
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtnombre"
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content"
+                android:hint="Nombre">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    android:layout_height="wrap_content"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtapellidos"
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content"
+                android:hint="Apellidos">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    android:layout_height="wrap_content"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtemail"
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content"
+
+                android:hint="E-mail">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:inputType="textEmailAddress"
+                    android:background="@color/white"
+                    android:layout_height="wrap_content"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnsiguiente"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:text="Siguiente"
+
+                    android:layout_margin="20dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Al continuar, aceptas nuestro Aviso de Privacidad.
+ULTRAFAST recopila esta información con el fin de crear tu cuenta, gestionar tus envíos, usar y mejorar nuestros servicios, así como garantizar la seguridad de nuestra plataforma.
+Tienes derechos sobre tus datos personales y puedes ejercerlos contactando con ULTRAFAST a través de nuestro formulario de contacto. Puedes obtener más información sobre tus derechos y la forma en la que gestionamos tus datos personales en nuestra Aviso de Privacidad."
+                    android:layout_marginLeft="20dp"
+
+                    android:layout_marginRight="20dp"
+
+
+                    android:textStyle="bold"
+                    android:textColor="#0B300C"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

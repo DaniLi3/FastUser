@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".Activitys.ModuloMisPublicaciones.PublicarViajeActivity.ConfirmarPublicacion">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/purple_700"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/purple_700"
+            android:orientation="vertical"
+            >
+        </LinearLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+          android:layout_marginTop="50dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            app:cardUseCompatPadding="true"
+            android:layout_marginRight="20dp"
+
+            android:animateLayoutChanges="true"
+            app:cardCornerRadius="10dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp"
+
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:textColor="#0B300C"
+                    android:textSize="25dp"
+                    android:text="Resumen"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+
+                        android:textColor="#0B300C"
+                        android:textSize="16dp"
+                        android:text="Fecha actual:"/>
+                    <TextView
+                        android:id="@+id/txtfechaactual"
+                        android:layout_width="match_parent"
+                        android:gravity="right"
+                        android:maxLines="1"
+                        android:textStyle="italic"
+                        android:layout_height="wrap_content"
+                        android:textColor="#0B300C"
+
+                        android:textSize="16dp"
+                        android:layout_marginLeft="5dp"
+                        android:text="25 de mayo"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="#0B300C"
+                        android:textSize="16dp"
+                        android:text="Hora actual"/>
+                    <TextView
+                        android:id="@+id/txthoraactual"
+                        android:layout_width="match_parent"
+                        android:gravity="right"
+                        android:maxLines="1"
+                        android:textStyle="italic"
+                        android:layout_height="wrap_content"
+                        android:textColor="#0B300C"
+                        android:textSize="16dp"
+                        android:layout_marginLeft="5dp"
+                        android:text="25 de mayo de 2021"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="#0B300C"
+                        android:textSize="16dp"
+                        android:text="Fecha de salida:"/>
+                    <TextView
+                        android:id="@+id/txtfecha"
+                        android:layout_width="match_parent"
+                        android:gravity="right"
+                        android:maxLines="1"
+                        android:textStyle="italic"
+                        android:layout_height="wrap_content"
+                        android:textColor="#0B300C"
+                        android:textSize="16dp"
+                        android:layout_marginLeft="5dp"
+                        android:text="25 de mayo de 2021"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="#0B300C"
+                        android:textSize="16dp"
+                        android:text="Hora de salida:"/>
+                    <TextView
+                        android:id="@+id/txthora"
+                        android:layout_width="match_parent"
+                        android:gravity="right"
+                        android:maxLines="1"
+                        android:textStyle="italic"
+                        android:layout_height="wrap_content"
+                        android:textColor="#0B300C"
+                        android:textSize="16dp"
+                        android:layout_marginLeft="5dp"
+                        android:text="18:00"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="#0B300C"
+                        android:textSize="16dp"
+                        android:text="Origen:"/>
+                    <TextView
+                        android:id="@+id/txtsalida"
+                        android:layout_width="match_parent"
+                        android:gravity="right"
+                        android:maxLines="1"
+                        android:textStyle="italic"
+                        android:layout_height="wrap_content"
+                        android:textColor="#0B300C"
+                        android:textSize="16dp"
+
+                        android:layout_marginLeft="5dp"
+                        android:text="Acapulco Gro."/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="#0B300C"
+                        android:textSize="16dp"
+                        android:text="Destino:"/>
+                    <TextView
+                        android:id="@+id/txtdestino"
+                        android:layout_width="match_parent"
+                        android:gravity="right"
+                        android:maxLines="1"
+                        android:textStyle="italic"
+                        android:layout_height="wrap_content"
+                        android:textColor="#0B300C"
+                        android:textSize="16dp"
+                        android:layout_marginLeft="5dp"
+
+                        android:text="La feria gro"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Entregas disponibles:"
+                        android:textColor="#0B300C"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/txtcantidad"
+                        android:layout_width="match_parent"
+                        android:gravity="right"
+                        android:maxLines="1"
+                        android:textStyle="italic"
+                        android:layout_height="wrap_content"
+                        android:textColor="#0B300C"
+                        android:textSize="16dp"
+                        android:layout_marginLeft="5dp"
+                        android:text="5"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="#0B300C"
+                        android:textSize="16dp"
+                        android:text="Peso disponible:"/>
+                    <TextView
+                        android:id="@+id/txtpeso"
+                        android:layout_width="match_parent"
+                        android:gravity="right"
+                        android:maxLines="1"
+                        android:textStyle="italic"
+                        android:layout_height="wrap_content"
+                        android:textColor="#0B300C"
+                        android:textSize="16dp"
+                        android:layout_marginLeft="5dp"
+                        android:text="50 kg"/>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#0B300C"
+                    android:textSize="16dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="5dp"
+                    android:textStyle="bold"
+                    android:text="Comentario del viaje"/>
+                <EditText
+                    android:id="@+id/editTextTextMultiLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:ems="10"
+                    android:layout_marginTop="10dp"
+                    android:hint="agrega un comentario"
+                    android:gravity="start|top"
+                    android:inputType="textMultiLine" />
+
+
+                <Button
+                    android:id="@+id/botonconfirmar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:layout_marginTop="30dp"
+                    android:layout_gravity="center"
+                    android:text="Confirmar"
+                    android:background="@drawable/btn_bottom_redonder"
+                    />
+
+
+
+            </LinearLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/CirculeImageback"
+        android:layout_width="40dp"
+        android:layout_margin="10dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_bak"
+        android:layout_gravity="left|top"
+        app:civ_border_color="#f0f0f0"
+
+        app:civ_border_width="3dp"
+        >
+
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

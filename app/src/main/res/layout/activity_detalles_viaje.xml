@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#F3F1F1"
+    tools:context=".Activitys.ModuloMisSolicitudes.EnviarSolicitud.DetallesViajeActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/purple_700"
+            android:orientation="vertical"
+            >
+
+        </LinearLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginLeft="7dp"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fecha de salida: "
+                        android:textStyle="bold"
+                        android:fontFamily="sans-serif-condensed"
+
+                        android:textColor="#003D66"
+                        android:textSize="18dp"
+                        />
+                    <TextView
+                        android:id="@+id/txtdetallesfecha"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="25 de diciembre"
+                        android:fontFamily="sans-serif-condensed"
+
+
+                        android:textColor="#003D66"
+                        android:textSize="15dp"
+                        />
+                </LinearLayout>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="10dp"
+
+                    android:layout_marginTop="10dp"
+                    android:animateLayoutChanges="true"
+                    app:cardElevation="1dp"
+                    android:background="@color/white">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="90dp"
+                                android:src="@drawable/linio"
+                                />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:paddingBottom="10dp"
+
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/deorigen"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:layout_marginLeft="5dp"
+
+                                android:orientation="vertical"
+                                >
+                                <TextView
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:maxLines="1"
+                                    android:text="Origen:"
+                                    android:textStyle="bold"
+                                    android:fontFamily="sans-serif-condensed"
+                                   android:textColor="#003D66"
+                                    android:textSize="10dp" />
+
+                                <TextView
+                                    android:id="@+id/txtcityorigen"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:maxLines="1"
+                                    android:text=""
+                                   android:textColor="#003D66"
+                                    android:textSize="18dp" />
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+
+
+                                    android:orientation="horizontal"
+                                    >
+
+                                    <TextView
+                                        android:id="@+id/txtdetallesorigen"
+
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:maxLines="1"
+                                        android:fontFamily="sans-serif-condensed"
+                                       android:textColor="#003D66"
+                                        android:text=""
+                                        android:textSize="14dp" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/dedestino"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1
+"
+                                android:layout_marginLeft="5dp"
+
+
+                                android:orientation="vertical"
+                                >
+                                <TextView
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:fontFamily="sans-serif-condensed"
+                                    android:maxLines="1"
+                                    android:text="Destino:"
+                                 android:textStyle="bold"
+                                   android:textColor="#003D66"
+                                    android:textSize="10dp" />
+                                <TextView
+                                    android:id="@+id/txtcitydestino"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="sans-serif-condensed"
+
+
+                                    android:maxLines="1"
+                                    android:text=""
+                                   android:textColor="#003D66"
+                                    android:textSize="18dp" />
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    >
+
+
+                                    <TextView
+                                        android:id="@+id/txtdetallesdestino"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginLeft="5dp"
+                                        android:fontFamily="sans-serif-condensed"
+
+                                        android:maxLines="1"
+
+
+                                       android:textColor="#003D66"
+                                        android:text=""
+                                        android:textSize="14dp" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="right"
+
+                            android:orientation="vertical">
+
+                           <LinearLayout
+                               android:layout_width="wrap_content"
+                               android:layout_height="match_parent"
+                               android:layout_weight="1"
+                               android:gravity="center"
+                               android:orientation="horizontal"
+                               >
+                               <ImageView
+                                   android:id="@+id/vero"
+                                   android:layout_width="30dp"
+                                   android:layout_height="30dp"
+                                   android:src="@drawable/navigate_next_24"/>
+
+                           </LinearLayout>
+                            <LinearLayout
+                                android:layout_weight="1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                >
+                                <ImageView
+                                    android:id="@+id/verde"
+
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:src="@drawable/navigate_next_24"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="10dp"
+
+                    android:layout_marginTop="10dp"
+                    android:animateLayoutChanges="true"
+                    app:cardElevation="1dp"
+                    android:background="@color/white">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:id="@+id/txtorigenkookin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/purple_700"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="Detalle del viaje"
+                            android:textSize="16sp"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="20dp"
+                            android:orientation="horizontal"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                               android:textColor="#003D66"
+                                android:layout_weight="1"
+                                android:fontFamily="sans-serif-condensed"
+                                android:text="Viaje creado el"
+                                android:textSize="16sp"/>
+                            <TextView
+                                android:id="@+id/txtdetallefechacre"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#1B2249"
+                                android:fontFamily="sans-serif-condensed"
+                                android:text=""
+
+                                android:textSize="14sp"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_marginLeft="20dp"
+
+                            android:layout_marginRight="20dp"
+                            android:orientation="horizontal"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#1B2249"
+                                android:layout_weight="1"
+                                android:fontFamily="sans-serif-condensed"
+                                android:text="Peso disponible"
+                                android:textSize="16sp"/>
+                            <TextView
+                                android:id="@+id/txtdetalleskilos"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#1B2249"
+                                android:fontFamily="sans-serif-condensed"
+                                android:text=""
+
+                                android:textSize="14sp"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_marginLeft="20dp"
+
+                            android:layout_marginRight="20dp"
+                            android:orientation="horizontal"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#1B2249"
+                                android:fontFamily="sans-serif-condensed"
+                                android:layout_weight="1"
+                                android:text="Entregas disponibles"
+                                android:textSize="16sp"/>
+                            <TextView
+                                android:id="@+id/txtdetaprecio"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#1B2249"
+                                android:fontFamily="sans-serif-condensed"
+                                android:text=""
+
+                                android:textSize="14sp"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:visibility="gone"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="20dp"
+                            android:orientation="horizontal"
+                            >
+
+                            <TextView
+                                android:id="@+id/txtorigenkooki"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#1B2249"
+                                android:layout_weight="1"
+                                android:fontFamily="sans-serif-condensed"
+                                android:text="Precio"
+                                android:textSize="16sp"/>
+                            <TextView
+                                android:id="@+id/txtdetallesprecio"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#4CAF50"
+                                android:fontFamily="sans-serif-condensed"
+                                android:text=" MNX $300"
+                                android:textStyle="bold"
+                                android:textSize="15sp"/>
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="20dp"
+                            android:orientation="horizontal"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/purple_700"
+                                android:layout_weight="1"
+                                android:fontFamily="sans-serif-condensed"
+                                android:textStyle="bold"
+                                android:text="Comentario del viajero"
+                                android:textSize="16sp"/>
+
+
+                        </LinearLayout>
+                        <TextView
+                            android:id="@+id/txtdetallecomenta"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#1B2249"
+                            android:layout_weight="1"
+                            android:fontFamily="sans-serif-condensed"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginRight="60dp"
+                            android:layout_marginLeft="20dp"
+                            android:text=""
+                            android:textSize="16sp"/>
+                        <Button
+                            android:id="@+id/bntenviar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Enviar solicitud"
+                            android:layout_marginBottom="15dp"
+                            android:background="@drawable/btn_bottom_redonder"
+                            android:layout_gravity="center"
+
+                            android:layout_marginTop="10dp"/>
+                    </LinearLayout>
+
+
+
+                </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                android:layout_marginBottom="40dp"
+
+                android:layout_marginTop="10dp"
+                android:animateLayoutChanges="true"
+                app:cardElevation="1dp"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical"
+                    >
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imageViewPro"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/user1"
+                        android:layout_gravity="center|top"
+                        app:civ_border_color="#f0f0f0"
+                        app:civ_border_width="2dp"
+                        />
+                    <TextView
+                        android:id="@+id/txtnomconductor"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                       android:textColor="#003D66"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textAlignment="center"
+
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        />
+                    <TextView
+                        android:id="@+id/txtnomconducor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Conductor"
+                        android:fontFamily="sans-serif-condensed"
+                       android:textColor="#003D66"
+                        android:textAlignment="center"
+                        android:layout_marginBottom="10dp"
+
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        />
+                    <TextView
+                        android:id="@+id/txtdescripcion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#8E8E8E"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textStyle="bold"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="5dp"
+                        android:textAlignment="center"
+                        android:text=""                        />
+                    <TextView
+                        android:id="@+id/verpe"
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textColor="@color/purple_700"
+                        android:layout_margin="20dp"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:text="Ver perfil completo"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="vertical"
+                        android:background="#A1A0A0"
+                        >
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/verdetallesperfil"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="horizontal"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            >
+                            <TextView
+                                android:id="@+id/txtdetallescoche"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                               android:textColor="#003D66"
+                                android:fontFamily="sans-serif-condensed"
+                                android:text="TOYOTA HDJ 100"
+                                android:textStyle="bold"
+                                android:textSize="16sp"/>
+                            <TextView
+                                android:id="@+id/txtori"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif-condensed"
+                                android:text=""                                android:textSize="16sp"/>
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/car"/>
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/navigate_next_24"/>
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/CirculeImageback"
+        android:layout_width="40dp"
+        android:layout_margin="10dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_bak"
+        android:layout_gravity="left|top"
+        app:civ_border_color="#f0f0f0"
+        app:civ_border_width="3dp"
+        >
+
+    </de.hdodenhof.circleimageview.CircleImageView>
+    <LinearLayout
+        android:id="@+id/cargando"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        android:visibility="gone"
+                    android:background="@color/white"
+
+        >
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

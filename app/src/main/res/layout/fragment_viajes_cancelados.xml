@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activitys.ModuloMisSolicitudes.ViajesCancelados">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/reci"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/verr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="350dp"
+            android:layout_gravity="center|top"
+            android:src="@drawable/can"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nofun"
+            android:layout_marginTop="-50dp"
+            android:text="Aquí aparecerán tus solicitudes canceladas"
+            android:textSize="25dp"
+            android:textColor="#083511"
+            android:textAlignment="center"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"/>
+
+
+
+
+    </LinearLayout>
+</FrameLayout>

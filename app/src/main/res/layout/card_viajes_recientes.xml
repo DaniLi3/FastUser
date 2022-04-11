@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+
+
+    android:padding="5dp"
+    android:animateLayoutChanges="true"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="5dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="#12E8F0F1"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+
+                    android:id="@+id/cardhora"
+                    android:layout_weight="1"
+
+                    android:layout_marginLeft="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                   android:textColor="#003D66"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp"
+                    android:text="Fecha de salida: 10 de mayo."/>
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/ic_publicado"/>
+                <TextView
+                    android:id="@+id/estado"
+                    android:layout_marginLeft="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                   android:textColor="#003D66"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp"
+                    android:text="Activo"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="80dp"
+                android:src="@drawable/linio"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+
+                        <TextView
+                            android:id="@+id/txtciudadorigen"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                           android:textColor="#003D66"
+                            android:maxLines="1"
+                            android:text="Acapulco"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/txtorigen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text="Irapuato Calle Emilio Carranza 729, Rodriguez"
+                       android:textColor="#003D66" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+
+                        <TextView
+                            android:id="@+id/txtciudaddestino"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                           android:textColor="#003D66"
+
+                            android:layout_marginTop="15dp"
+                            android:text="Destino"
+                            android:maxLines="1"
+
+
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/txtdestino"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                       android:textColor="#003D66"
+                        android:text="Ciudad de México Calle Zacatépetl 24, Insurgentes"
+                        android:maxLines="1"
+                        android:layout_marginBottom="5dp"
+
+                        />
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                >
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/navigate_next_24"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/txtasignados"
+                android:layout_marginLeft="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               android:textColor="#003D66"
+                android:textSize="12dp"
+                android:layout_gravity="left"
+
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:text="Paquetes asignados: 0"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="right"
+                >
+
+                <TextView
+                    android:id="@+id/txtpesodis"
+                    android:layout_marginLeft="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+
+                   android:textColor="#003D66"
+                    android:textSize="12dp"
+
+                    android:textStyle="bold"
+
+                    android:text="Peso disponible en el auto: 4 kg"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".Activitys.ModuloMisSolicitudes.DetallesDeMisSolicitudes.ViajeIniciado">
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="150dp"
+
+        android:name="com.google.android.gms.maps.SupportMapFragment"/>
+
+
+    <com.github.florent37.shapeofview.shapes.BubbleView
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        app:shape_bubble_arrowHeight="15dp"
+        app:shape_bubble_arrowWidth="15dp"
+        app:shape_bubble_arrowPosition="top"
+        app:shape_bubble_borderRadius="20dp"
+        android:layout_gravity="bottom"
+
+        >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:layout_marginTop="20dp"
+            >
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+               android:layout_margin="20dp"
+                >
+                <TextView
+
+                    android:id="@+id/txtnomusser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Job Daniel Guzman"
+                    android:textColor="#0B300C"
+                    android:maxLines="1"
+
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Origen:"
+                        android:textColor="#0B300C"
+                        android:maxLines="1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:textSize="12sp"
+                        />  <TextView
+                        android:id="@+id/txtorigen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Acapulco de cayaco"
+                    android:textStyle="bold"
+                    android:textColor="#0B300C"
+                        android:maxLines="1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                    android:textSize="12sp"
+                        />
+
+                </LinearLayout><LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Destino:"
+                        android:textColor="#0B300C"
+                        android:maxLines="1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:textSize="12sp"
+                        />  <TextView
+                        android:id="@+id/txtdestino"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="24 km"
+                    android:textStyle="bold"
+                    android:textColor="#0B300C"
+                        android:maxLines="1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                android:textSize="12sp"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tiempo de llegada: "
+                        android:textColor="#0B300C"
+                        android:maxLines="1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:textSize="12sp"
+                        />  <TextView
+                    android:id="@+id/txtdistancia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="24 km"
+                    android:textStyle="bold"
+                    android:textColor="#0B300C"
+                    android:maxLines="1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="12sp"
+                    />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Distancia: "
+                        android:textColor="#0B300C"
+                        android:maxLines="1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:textSize="12sp"  /> <TextView
+                        android:id="@+id/txttiempo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="56 hrs."
+                    android:textStyle="bold"
+                    android:textColor="#0B300C"
+                        android:maxLines="1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                    android:textSize="12sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fecha de llegada:"
+                        android:textColor="#0B300C"
+                        android:maxLines="1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:textSize="12sp" />
+                    <TextView
+                        android:id="@+id/txtfechallegada"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="56 hrs."
+                    android:textStyle="bold"
+                        android:textColor="#0B300C"
+                        android:maxLines="1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:textSize="12sp"  />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    >
+
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnllamarc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Llamar"
+                        android:backgroundTint="#24DD2C"
+                        app:cornerRadius="10sp"
+                        android:layout_margin="5dp"
+                        android:layout_gravity="center"/>
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+    </com.github.florent37.shapeofview.shapes.BubbleView>
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

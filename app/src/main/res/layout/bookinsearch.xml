@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Activitys.fr">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+        >
+        <com.github.florent37.shapeofview.shapes.DiagonalView
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:elevation="4dp"
+            app:shape_diagonal_angle="10"
+            app:shape_diagonal_direction="left"
+            app:shape_diagonal_position="bottom">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/purple_700"/>
+
+
+            <!-- YOUR CONTENT -->
+
+
+
+
+        </com.github.florent37.shapeofview.shapes.DiagonalView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Miguel Angel Ruiz Nava"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="23dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Principiante"
+            android:textAlignment="center"
+            android:textSize="20dp"
+
+       />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="20"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                 />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="viajes realizados"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:textSize="13dp"
+
+
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="10"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="solicitados"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:textSize="13dp"
+
+
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="4.6"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="calificacion"
+                    android:textAlignment="center"
+                    android:textSize="13dp"
+
+
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Información personal"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Seleccionar preferencias"
+            android:textAlignment="center"
+            android:textColor="@color/purple_700"
+            android:textSize="15dp"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Coche"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Añadir un coche"
+            android:textAlignment="center"
+            android:textColor="@color/purple_700"
+            android:textSize="15dp"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ver perfil público"
+            android:textAlignment="center"
+            android:textColor="@color/purple_700"
+            android:textSize="15dp"
+            android:layout_marginTop="70dp"
+            android:textStyle="bold"/>
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageViewProfile"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/user1"
+        android:paddingBottom="20dp"
+        android:layout_gravity="center|top"
+        app:civ_border_color="#f0f0f0"
+        app:civ_border_width="5dp"
+        android:layout_marginTop="120dp"/>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/fotoProfile"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/cambiar"
+        android:paddingBottom="20dp"
+        android:layout_gravity="center|top"
+        app:civ_border_color="#f0f0f0"
+        android:layout_marginLeft="70dp"
+        app:civ_border_width="5dp"
+
+        android:layout_marginTop="200dp">
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+</FrameLayout>

@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".Activitys.ModuloMisPublicaciones.TapViajesPublicados.VerViajeenCurso">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/purple_700"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DETALLES"
+
+                android:layout_gravity="center"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textSize="23sp"/>
+
+        </LinearLayout>
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                >
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Fecha de salida:"
+                    android:layout_marginLeft="30dp"
+                    android:textColor="#0B300C"
+                    android:layout_marginTop="10dp"
+
+                    android:textSize="18sp"/>
+                <TextView
+                    android:id="@+id/txtdetallesfecha"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lunes 22 de Mayo a las 03:00"
+                    android:layout_marginLeft="30dp"
+                    android:textColor="#0B300C"
+
+                    android:textStyle="bold|italic"
+                    android:textSize="23sp"/>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    app:cardCornerRadius="2dp"
+                    android:layout_marginTop="13dp"
+                    android:background="@color/white">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="80dp"
+
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/linea" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/deorigen"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:layout_marginLeft="5dp"
+
+                                android:orientation="vertical"
+                                >
+                                <TextView
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textStyle="bold"
+                                    android:maxLines="1"
+                                    android:text="Origen:"
+                                    android:textColor="#0B300C"
+                                    android:textSize="15dp" />
+                                <TextView
+                                    android:id="@+id/txtdetallesorigen"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textStyle="italic"
+
+                                    android:maxLines="1"
+                                    android:text="Acapulco Gro."
+                                    android:textColor="#0B300C"
+                                    android:textSize="18dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/dedestino"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:layout_marginLeft="5dp"
+
+
+                                android:orientation="vertical"
+                                >
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textStyle="bold"
+                                    android:maxLines="1"
+                                    android:text="Origen:"
+                                    android:textColor="#0B300C"
+                                    android:textSize="15dp" />
+                                <TextView
+                                    android:id="@+id/txtdetallesdestino"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:maxLines="1"
+                                    android:textStyle="italic"
+                                    android:text="Acapulco Gro."
+                                    android:textColor="#0B300C"
+                                    android:textSize="18dp" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="right"
+
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                >
+                                <ImageView
+                                    android:id="@+id/vero"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:src="@drawable/navigate_next_24"/>
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_weight="1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                >
+                                <ImageView
+                                    android:id="@+id/verde"
+
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:src="@drawable/navigate_next_24"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+
+
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/white"
+
+                        android:layout_marginBottom="5dp"
+
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#92F5F6F6"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:paddingBottom="10dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="20dp"
+                                android:orientation="horizontal"
+                                >
+
+                                <TextView
+                                    android:id="@+id/txtorigenkookin"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/purple_700"
+                                    android:textStyle="bold"
+                                    android:layout_weight="1"
+                                    android:text="Detalle del viaje"
+                                    android:textSize="16sp"/>
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="20dp"
+                                android:orientation="horizontal"
+                                >
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#0B300C"
+                                    android:layout_weight="1"
+                                    android:textStyle="bold"
+                                    android:text="Fecha de publicación:"
+                                    android:textSize="16sp"/>
+                                <TextView
+                                    android:id="@+id/txtdetallefechacre"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#1B2249"
+                                    android:text="13 de mayo,16:13 hrs"
+                                    android:textStyle="italic"
+                                    android:textSize="14sp"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:layout_marginLeft="20dp"
+
+                                android:layout_marginRight="20dp"
+                                android:orientation="horizontal"
+                                >
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#1B2249"
+                                    android:layout_weight="1"
+                                    android:textStyle="bold"
+                                    android:text="Peso disponible:"
+                                    android:textSize="16sp"/>
+                                <TextView
+                                    android:id="@+id/txtdetalleskilos"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#1B2249"
+                                    android:text="50 kg"
+                                    android:textStyle="italic"
+                                    android:textSize="14sp"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:layout_marginLeft="20dp"
+
+                                android:layout_marginRight="20dp"
+                                android:orientation="horizontal"
+                                >
+
+                                <TextView
+                                    android:layout_width="354dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="Entregas disponibles:"
+                                    android:textColor="#1B2249"
+                                    android:textStyle="bold"
+                                    android:textSize="16sp" />
+                                <TextView
+                                    android:id="@+id/txtdetaprecio"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#1B2249"
+                                    android:text="10"
+                                    android:textStyle="italic"
+                                    android:textSize="14sp"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:visibility="gone"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="20dp"
+                                android:orientation="horizontal"
+                                >
+
+                                <TextView
+                                    android:id="@+id/txtorigenkooki"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#1B2249"
+                                    android:layout_weight="1"
+                                    android:text="Precio"
+                                    android:textSize="16sp"/>
+                                <TextView
+                                    android:id="@+id/txtdetallesprecio"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#4CAF50"
+                                    android:text=" MNX $300"
+                                    android:textStyle="bold"
+                                    android:textSize="15sp"/>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginRight="20dp"
+                                android:orientation="horizontal"
+                                >
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/purple_700"
+                                    android:layout_weight="1"
+                                    android:textStyle="bold"
+                                    android:text="Comentario"
+                                    android:textSize="16sp"/>
+
+
+                            </LinearLayout>
+                            <TextView
+                                android:id="@+id/txtdetallecomenta"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#1B2249"
+                                android:layout_weight="1"
+                                android:textStyle="italic"
+
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginRight="60dp"
+                                android:layout_marginLeft="20dp"
+                                android:text="Entrego los paquetes en la central de autobuses"
+                                android:textSize="16sp"/>
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+
+                    >
+                    <Button
+                        android:id="@+id/btnmodificarviaje"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="INICIAR VIAJE"
+                        android:layout_gravity="bottom|center"
+                        android:background="@drawable/btn_bottom_redonder"
+                        />
+                   
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+        </ScrollView>
+    </LinearLayout>
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/CirculeImageback"
+        android:layout_width="40dp"
+        android:layout_margin="10dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_bak"
+        android:layout_gravity="left|top"
+        app:civ_border_color="#f0f0f0"
+        app:civ_border_width="3dp"
+        >
+
+    </de.hdodenhof.circleimageview.CircleImageView>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:orientation="vertical"
+        >
+
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

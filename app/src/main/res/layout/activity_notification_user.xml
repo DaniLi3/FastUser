@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+       android:orientation="vertical"
+
+    tools:context=".Activitys.ModuloMisPublicaciones.TapSolicitudes">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_700">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SOLICITUDES"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20dp"/>
+    </LinearLayout>
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/table"
+        app:tabTextColor="@color/black"
+        app:tabBackground="@color/white"
+        app:tabIndicatorColor="@color/purple_700"
+        app:tabSelectedTextColor="@color/purple_700"/>
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/view_pague"/>
+</LinearLayout>
